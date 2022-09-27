@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="a3hub"
+			fetch="https://github.com/a3project"
+			revision="android-13" />
+
+	<!-- Device -->
+	<project path="device/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+
+	<!-- Kernel -->
+	<project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+	
+	<!-- Vendor -->
+	<project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+	
+	<!-- Compiler -->
+	<project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
+</manifest>
