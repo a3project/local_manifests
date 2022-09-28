@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="a3hub"
+			fetch="https://github.com/a3project"
+			revision="android-13" />
+    <remote name="ashub"
+            fetch="ssh://git@github.com/a3project"
+            revision="android-13" />
+    <remote name="a3lab"
+            fetch="https://gitlab.com/a3project"
+            revision="awaken-13" />
+    <remote name="aslab"
+            fetch="ssh://git@gitlab.com/a3project"
+            revision="awaken-13" />
+    <remote name="extrahub"
+            fetch="https://github.com" />
+
+    <!-- Remove -->
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+
+	<!-- Device -->
+	<project path="device/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="a3hub" revision="awaken-13" clone-depth="1" />
+
+	<!-- Kernel -->
+	<project path="kernel/xiaomi/rosy" name="kernel_stagging" remote="ashub" clone-depth="1" />
+	
+	<!-- Vendor -->
+	<project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+	
+	<!-- Compiler -->
+	<project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
+    
+    <!-- Extra -->
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="extrahub" revision="arrow-13.0" />
+    <project path="vendor/xiaomi/dirac" name="vendor_xiaomi_dirac" remote="a3lab" revision="android-13" clone-depth="1" />
+</manifest>
