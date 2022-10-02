@@ -17,12 +17,13 @@
 
     <!-- Remove -->
     <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_power" />
 
 	<!-- Device -->
 	<project path="device/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="a3hub" revision="awaken-13" clone-depth="1" />
 
 	<!-- Kernel -->
-	<project path="kernel/xiaomi/rosy" name="kernel_stagging" remote="ashub" clone-depth="1" />
+	<project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_rosy" remote="ashub" clone-depth="1" />
 	
 	<!-- Vendor -->
 	<project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
@@ -32,5 +33,6 @@
     
     <!-- Extra -->
     <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="extrahub" revision="arrow-13.0" />
+    <project path="vendor/qcom/opensource/power" name="ArrowOS/android_vendor_qcom_opensource_power" remote="extrahub" revision="arrow-13.0" />
     <project path="vendor/xiaomi/dirac" name="vendor_xiaomi_dirac" remote="a3lab" revision="android-13" clone-depth="1" />
 </manifest>
